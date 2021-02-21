@@ -32,4 +32,3 @@ intervals.append([numbers[start], numbers[-1]])
 
 print(intervals)
 print(len(intervals))
-print(129504 in numbers)
