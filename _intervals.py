@@ -11,7 +11,7 @@ from os.path import isfile, join
 
 repo_path = 'C:\\Users\\maksi\\Desktop\\Projects\\emoji-repository'
 onlyfiles = [f for f in listdir(repo_path) if isfile(join(repo_path, f))]
-print(len(onlyfiles))
+print(f"{len(onlyfiles)} files in repository")
 
 numbers = set()
 for file in onlyfiles:
@@ -31,4 +31,4 @@ for i in range(1, len(numbers)):
 intervals.append([numbers[start], numbers[-1]])
 
 print(intervals)
-print(len(intervals))
+print(f"{len(intervals)} intervals total")
